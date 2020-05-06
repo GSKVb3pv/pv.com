@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>My Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.school_name{
+         display: inline-block;
+  vertical-align: middle;
+     font-size: 3em;
+  color: black;
+  font-family:Old English Text MT;
+  text-shadow: 4px 4px 4px #bbb;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#102530')";
+}
+
+.address_name{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2em;
+  color: black;
+  font-family:Old English Text MT;
+  text-shadow: 2px 2px 2px #ccc;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#102530')";
+}
+
+.header {
+    margin: 0;
+    padding:0px 0;
+    
+    text-align: center;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.topnav a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: relative;
+  background-color: red;
+  width: relative;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: top;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+/* Image Slideshow*/
+.slideshow-container {
+position: relative;
+margin:0 0 0 0;
+}
+
+
+hr.new1 {
+  border: 10px solid green;
+  border-radius: 0px;
+
+}
+hr.new2 {
+  margin: 0;
+  border: 20px solid blue;
+  border-radius: 0px;
+}
+
+.a { color: #FFFFFF; } /* CSS link color */
+
+
+.cleaner {clear: both;}
+#container {
+    width: 98%;
+    margin: 10px auto 5px auto;
+    background: #fff;
+    border-radius: 3px;
+    padding: 20px 0 5px 0;
+    border: solid 1px #f0f0f0;
+}
+
+#footer {
+    background-color: #0099ff;
+    border-top: 1px solid #e5e5e5;
+    color: #fff;
+    padding: 10px 0;
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+    #footer a {
+        color: #428bca;
+        font-weight: normal;
+        padding: 0px 15px;
+        font-size: 12px;
+    }
+
+    #footer p {
+        margin: 2px;
+    }
+
+
+    #footer a:hover {
+        text-decoration: underline;
+    }
+.page_heading {
+    border-bottom: solid 1px #dedede;
+    font-size: 30px;
+    font-weight: normal;
+    margin: 0 0 5px 0;
+    padding: 10px 0 10px 0;
+    color: #e62e00;
+}
+
+</style>
+
+<style>
+.vertical-menu {
+  width: 250px;
+  margin: auto;
+}
+
+.vertical-menu a {
+  background-color: #ffe6ff;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  border: 2px solid white;
+}
+
+.vertical-menu a:hover {
+  border-left: 10px solid #ff99ff;
+}
+
+.vertical-menu a.active {
+  color: white;
+}
+
+.vertical-menu1 {
+  width: 250px;
+  margin: auto;
+}
+
+.vertical-menu1 a {
+  background-color: #b3e6b3;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  border: 2px solid white;
+}
+
+.vertical-menu1 a:hover {
+  border-left: 10px solid #00cc66;
+}
+
+.vertical-menu1 a.active {
+  color: white;
+}
+</style>
+
+</head>
+<body bgcolor="#FFFFFF">
+<!-- Marquee -->
+<marquee direction="left" scrolldelay="200"><strong><h5><font color="red">***Corona Virus: Stay Home, Stay Safe</font>
+<font color="Purple">***Wash Hands</font></h5></strong></marquee>
+
+<!-- School Name -->
+<div class="header">
+  <div class="school_name"><span>Government Sarvodaya Kanya Vidhyalya</span></div><br>
+  <div class="address_name"><span>B-3, Paschim Vihar, Delhi-110063</span></h3>
+</div>
+
+<!-- Top Navigation and Sub Navigation -->
+<div class="topnav">
+  
+  <a class="active" href="index.html">Home</a> 
+   
+  <div class="subnav">
+   <button class="subnavbtn">About Us
+   <i class="fa fa-caret-down"></i></button>
+
+  <div class="subnav-content">
+    <a href="aboutus.html">School Statistics</a>
+  </div>
+  </div>
+
+  <div class="subnav">
+   <button class="subnavbtn">Admission
+  </div>
+
+  <div class="subnav">
+   <button class="subnavbtn">Academic
+   <i class="fa fa-caret-down"></i></button>
+
+  <div class="subnav-content">
+    <a href="#Principal Message">Our Academics</a>
+    <a href="#School Statistics">Section wise Enrollment</a>
+  </div>
+  </div>
+
+  <div class="subnav">
+   <button class="subnavbtn">Student Corner
+   <i class="fa fa-caret-down"></i></button>
+
+  <div class="subnav-content">
+    <a href="#About School">Online Classes</a>
+  </div>
+  </div>
+
+  <a href="#home">Achievements</a> 
+  <a href="#home">Circulars</a> 
+  <a href="#home">Gallery</a>  
+  <a href="#contact">Help Desk</a>
+</div>
+</div>
+
+<h1 style="text-align: center; color: green">Online Classes</h1>
+<h4 style="text-align: center; background-color: pink"><a href="WeeklyScheduleClass12.pdf" target="_blank">Weekly Schedule(Class-12)</a></h4>
+<h3 style="text-align: center"><a class="text-" href="https://www.aspiration.ai" target="_blank" ><img src="aspiration.jpg"></a></h3>
+
+<br><br>
+<br><br>
+<br><br>
+<br>
+<!-- Footer -->
+
+<div id="footer">
+<div class="container">     
+  <span style="text-align: center;">
+      <span id="ctl00_divBottomLinks_lblFooter">
+    <p>Sarvodaya Kanya Vidhyalya,
+    B-3, Paschim Vihar, Delhi-110063 |
+    Ph. No. : 011-25252094  |
+    E-mail : govtkanyab3@gmail.com  </p>
+    <p>Copyright © 2020 Sarvodaya Kanya Vidhyalya, B-3 Paschim Vihar</p>
+  </span>
+  </span>
+</div>
+</div>
+
+</body>
+</html> 
+

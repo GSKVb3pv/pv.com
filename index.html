@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.school_name{
+         display: inline-block;
+	vertical-align: middle;
+   	 font-size: 3em;
+	color: black;
+	font-family:Old English Text MT;
+	text-shadow: 4px 4px 4px #bbb;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#102530')";
+}
+
+.address_name{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2em;
+	color: black;
+	font-family:Old English Text MT;
+	text-shadow: 2px 2px 2px #ccc;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='#102530')";
+}
+
+.header {
+    margin: 0;
+    padding:0px 0;
+    
+    text-align: center;
+}
+
+  .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.topnav a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: relative;
+  background-color: red;
+  width: relative;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: top;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+/* Image Slideshow*/
+.slideshow-container {
+position: relative;
+margin:0 0 0 0;
+}
+
+
+hr.new1 {
+  border: 10px solid green;
+  border-radius: 0px;
+
+}
+hr.new2 {
+  margin: 0;
+  border: 20px solid blue;
+  border-radius: 0px;
+}
+
+.a { color: #FFFFFF; } /* CSS link color */
+
+
+.cleaner {clear: both;}
+#container {
+    width: 98%;
+    margin: 10px auto 5px auto;
+    background: #fff;
+    border-radius: 3px;
+    padding: 20px 0 5px 0;
+    border: solid 1px #f0f0f0;
+}
+
+#footer {
+    background-color: #0099ff;
+    border-top: 1px solid #e5e5e5;
+    color: #fff;
+    padding: 10px 0;
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+    #footer a {
+        color: #428bca;
+        font-weight: normal;
+        padding: 0px 15px;
+        font-size: 12px;
+    }
+
+    #footer p {
+        margin: 2px;
+    }
+
+
+    #footer a:hover {
+        text-decoration: underline;
+    }
+.page_heading {
+    border-bottom: solid 1px #dedede;
+    font-size: 30px;
+    font-weight: normal;
+    margin: 0 0 5px 0;
+    padding: 10px 0 10px 0;
+    color: #e62e00;
+}
+
+</style>
+
+<style>
+.vertical-menu {
+  width: 250px;
+  margin: auto;
+}
+
+.vertical-menu a {
+  background-color: #ffe6ff;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  border: 2px solid white;
+}
+
+.vertical-menu a:hover {
+  border-left: 10px solid #ff99ff;
+}
+
+.vertical-menu a.active {
+  color: white;
+}
+
+.vertical-menu1 {
+  width: 250px;
+  margin: auto;
+}
+
+.vertical-menu1 a {
+  background-color: #b3e6b3;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  border: 2px solid white;
+}
+
+.vertical-menu1 a:hover {
+  border-left: 10px solid #00cc66;
+}
+
+.vertical-menu1 a.active {
+  color: white;
+}
+</style>
+
+</head>
+<body bgcolor="#FFFFFF">
+<!-- Marquee -->
+<marquee direction="left" scrolldelay="200"><strong><h5><font color="red">***Corona Virus: Stay Home, Stay Safe</font>
+<font color="Purple">***Wash Hands</font></h5></strong></marquee>
+
+<!-- School Name -->
+<div class="header">
+	<div class="school_name"><span>Government Sarvodaya Kanya Vidhyalya</span></div><br>
+	<div class="address_name"><span>B-3, Paschim Vihar, Delhi-110063</span></h3>
+</div>
+
+<!-- Top Navigation and Sub Navigation -->
+<div class="topnav">
+  
+  <a class="active" href="index.html">Home</a> 
+   
+  <div class="subnav">
+   <button class="subnavbtn">About Us
+   <i class="fa fa-caret-down"></i></button>
+
+  <div class="subnav-content">
+    <a href="aboutus.html">School Statistics</a>
+  </div>
+  </div>
+
+  <div class="subnav">
+   <button class="subnavbtn">Admission
+  </div>
+
+  <div class="subnav">
+   <button class="subnavbtn">Academic
+   <i class="fa fa-caret-down"></i></button>
+
+  <div class="subnav-content">
+    <a href="#Principal Message">Our Academics</a>
+    <a href="#School Statistics">Section wise Enrollment</a>
+  </div>
+  </div>
+
+  <div class="subnav">
+   <button class="subnavbtn">Student Corner
+   <i class="fa fa-caret-down"></i></button>
+
+  <div class="subnav-content">
+    <a href="studentcorner.html">Online Classes</a>
+  </div>
+  </div>
+
+  <a href="#home">Achievements</a> 
+  <a href="#home">Circulars</a> 
+  <a href="#home">Gallery</a>  
+  <a href="#contact">Help Desk</a>
+</div>
+</div>
+
+
+<!-- Photo Slideshow -->
+	
+<div class="slideshow-container">
+	<marquee direction="right">
+	  <img src="images/1.jpg" width="500" height="300">
+	  <img src="images/2.jpg" width="500" height="300">
+	  <img src="images/3.jpg" width="500" height="300">
+	  <img src="images/4.jpg" width="500" height="300">
+	  <img src="images/5.jpg" width="500" height="300">
+	  <img src="images/6.jpg" width="500" height="300">
+	</marquee>
+</div>
+
+<!-- Latest News -->
+
+<div class="News">
+<marquee direction="left" scrolldelay="20" bgcolor="#3399ff" behaviour="alternate" onMouseOver="this.setAttribute('scrollamount', 0, 0);this.stop();" OnMouseOut="this.setAttribute('scrollamount', 6, 0);this.start();"><strong><h5><font color="white"><a target='_blank' href='http://www.edudel.nic.in/upload/upload_2019_20/1725_31_dt_31032020.pdf'> >> Deployment of Officers / Officials with SDM @ DM North<img src="https://ugcnet.nta.nic.in/WebInfo/Images/newicon.gif" /></a><a target='_blank' href='http://www.edudel.nic.in/upload/upload_2017_18/61_dt_21042020.pdf'> >> Covid-19 Duty Order in r/o IT Assistants @ IT Branch<img src="https://ugcnet.nta.nic.in/WebInfo/Images/newicon.gif" /></a></font></marquee>
+</div>
+
+<!-- Three Columns -->
+
+<div class="container-fluid">
+<div class="row">
+
+<!-- Column 1 -->
+
+	<div style="height: 10px;"></div>
+<div class="col-sm-3">
+
+	<div class="vertical-menu">
+	   <div style="background-color:#ff99ff">
+	   <div style="color:white;text-align:center;padding:5px;border-bottom:1px solid white"><h3>Current Events</h3>
+	   </div>
+	   </div>
+		<a target='_blank' href='https://ugcnet.nta.nic.in/WebInfo/Handler/FileHandler.ashx?i=File&ii=352&iii=Y'>Public Notice: 		COVID-19<img src="https://ugcnet.nta.nic.in/WebInfo/Images/newicon.gif" /></a>
+		<a target='_blank' href='https://ugcnet.nta.nic.in/WebInfo/Handler/FileHandler.ashx?i=File&ii=308&iii=Y'>Result 2019-20<img src="https://ugcnet.nta.nic.in/WebInfo/Images/newicon.gif" /></a>
+		<a target='_blank' href='https://ugcnet.nta.nic.in/WebInfo/Handler/FileHandler.ashx?i=File&ii=310&iii=Y'>Examination Notification</a>
+		<a target='_blank' href='https://ugcnet.nta.nic.in/WebInfo/Handler/FileHandler.ashx?i=File&ii=310&iii=Y'>Annual Function</a>
+		<a target='_blank' href='https://ugcnet.nta.nic.in/WebInfo/Handler/FileHandler.ashx?i=File&ii=310&iii=Y'>Library Mela</a>
+		<a target='_blank' href='https://ugcnet.nta.nic.in/WebInfo/Handler/FileHandler.ashx?i=File&ii=311&iii=Y'>Club Activity</a>
+	</div>
+</div>
+
+<!-- Column 2 -->
+
+<div class="col-sm-6">
+	<h2  class="page_heading" >From the Desk of the Head of School</h2><br />
+	<p align="justify">Striving for excellence is a skill which can be cultivated and a mindset which can be fostered. Children are our most valuable resource and we nurture them with utmost love, care and compassion. We instil in them long term values such as discipline, commitment, perseverance which will help them in every sphere of life – from success in exams to winning a marathon. As educators our role is to provide the children appropriate tools with which they can cultivate their own gardens of knowledge.</p>
+	<p align="justify">Our students have done us proud by reaching unprecedented  heights. They have been successful at all levels – National, State and in all fields academics, sports and co-curriculars. They are encouraged to be socially aware, morally conscious and ethically strong. They have set a benchmark for the younger Dipsites to emulate.</p>
+	<p align="justify">There is great truth to the saying, ‘You can’t do it alone’. We owe our success to the able leadership  and futuristic vision of our patrons who have been a constant source of encouragement and guidance to us. We are thankful to our parents for their consistent support in all our endeavours. The unflagging resolve and dogged persistence of our faculty and students has led us to the path of glory.</p>
+<p>To  all my dear children I would like to say :</p>
+    <p align="center"><strong>IMAGINE</strong> with all your mind<br />
+        <strong>BELIEVE</strong> with all your heart<br />
+        <strong>ACHIEVE</strong> with all your might.</p>
+</div>
+
+<!-- Column 3 -->
+
+	<div style="height: 10px;"></div>
+<div class="col-sm-3"> 
+
+<!-- Column 3.1 -->
+
+	<div class="vertical-menu1">
+	   <div style="background-color:#00cc66">
+	   <div style="color:white;text-align:center;padding:5px;border-bottom:1px solid white"><h3>Important Links</h3>
+	   </div>
+	   </div>
+
+	   <a target='_blank' href='http://edustud.nic.in/mis/MisAdmin/frmMisLoginStudent.aspx'>Student Module Login</a>
+	   <a target='_blank' href='http://www.edudel.nic.in/welcome_folder/Happiness.htm'>Happiness Curriculum</a>
+	   <a target='_blank' href='http://www.edudel.nic.in/asg_file/classwise_distribution_new.htm'>Syllabus</a>
+	</div>
+
+<!-- Column 3.2 -->
+
+	<div align="center">
+		<div style="height: 10px;"></div> 
+		<a target='_blank' href='http://www.edudel.nic.in/'><img src="unnamed.jpg" alt="Delhi Education" width=250" height="50"></a> 
+
+		<div style="height: 10px;"></div>
+
+		<a target='_blank' href='http://www.cbse.nic.in/'><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQEAmvN9Z42hKBQRbzclwS2QPr8vE5K2j_hy6tzWcQDPMtWrUDA&usqp=CAU" alt="CBSE" width=250" height="50"></a>
+
+		<div style="height: 10px;"></div>
+		<a target='_blank' href='http://ncert.nic.in/textbook/textbook.htm'><img src="https://spiderimg.itstrendingnow.com/assets/images/2019/10/15/ncert_1571086232.jpeg" alt="NCERT Books" width=250" height="50"></a>
+	</div>
+</div>
+
+</div>
+</div>
+
+<!-- Footer -->
+
+<div id="footer">
+<div class="container">     
+	<span style="text-align: center;">
+    	<span id="ctl00_divBottomLinks_lblFooter">
+		<p>Sarvodaya Kanya Vidhyalya,
+		B-3, Paschim Vihar, Delhi-110063 |
+		Ph. No. : 011-25252094  |
+		E-mail : govtkanyab3@gmail.com  </p>
+		<p>Copyright © 2020 Sarvodaya Kanya Vidhyalya, B-3 Paschim Vihar</p>
+	</span>
+	</span>
+</div>
+</div>
+
+</body>
+</html> 
+
